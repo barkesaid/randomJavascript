@@ -1,20 +1,9 @@
 <html>
 
   <head>
-      <script type="text/javascript" >
+      <script type="text/javascript" src="alerts.js" >
           
-          function addition(){
-    
-               var number1 =  document.getElementById("number1").value; 
-               var number2 =  document.getElementById("number2").value; 
-               var sum =  document.getElementById("sum").value; 
-
-                   sum = number1 + number2;
-
-                 document.getElementById("sum").focus();
-                 document.getElementById("sum").value=sum;
-    
-            }
+     
       </script>
  
     </head> 
@@ -22,7 +11,7 @@
  
  <body>    
    
-     <form id='form1' action="#" autocomplete="off">
+     <form id='form1' action="hello.html" autocomplete="off">
      
      <p>Enter first number: <br>
      <input type="text" placeholder="number 1" id="number1" name= "number1"/>  
@@ -33,7 +22,7 @@
      </p>
      
          
-        <p>The sum is  : <input type="text" placeholder="sum" id="sum" onclick= "return addition()" />  
+        <p>The sum is  : <input type="text" placeholder="sum" id="sum" onclick="return addition()" />  
      </p>
     
          <input type="submit" value="submit" />
